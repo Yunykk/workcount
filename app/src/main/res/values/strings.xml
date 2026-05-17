@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WorkCount</string>
+    <string name="widget_name">WorkCount Timer</string>
+</resources>

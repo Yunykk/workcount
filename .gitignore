@@ -1,0 +1,22 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.iml
+.idea/
+
+# Android Studio
+.navigation/
+captures/
+*.apk
+*.ap_
+*.aab
+*.aar
+
+# Generated files
+app/release/
+*.hprof
+
+# OS files
+.DS_Store
+Thumbs.db
