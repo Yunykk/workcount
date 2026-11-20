@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="190" viewBox="0 0 680 190">
+  <title>WorkCount's timer, journal, and export workflow</title>
+  <rect width="680" height="190" rx="15" fill="#17231f"/>
+  <g fill="#21352d" stroke="#527269">
+    <rect x="24" y="28" width="185" height="134" rx="12"/>
+    <rect x="248" y="28" width="185" height="134" rx="12"/>
+    <rect x="472" y="28" width="184" height="134" rx="12"/>
+  </g>
+  <g fill="none" stroke="#a8ebd0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="55" cy="64" r="11"/><path d="M55 57v7l5 3M53 48h4M223 95h11m-4-4 4 4-4 4M447 95h11m-4-4 4 4-4 4"/>
+    <path d="M274 55h18v19h-18zM278 60h10m-10 5h10m-10 5h6M507 53v14m-5-5 5 5 5-5m-16 7v6h22v-6"/>
+  </g>
+  <g font-family="sans-serif" fill="#f4fcf8" font-size="26" font-weight="700">
+    <text x="43" y="112">Time it</text><text x="267" y="112">Review it</text><text x="491" y="112">Export it</text>
+  </g>
+  <g font-family="sans-serif" fill="#c4e1d7" font-size="18">
+    <text x="43" y="139">Shift timer</text><text x="267" y="139">Journal</text><text x="491" y="139">CSV / PDF</text>
+  </g>
+</svg>

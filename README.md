@@ -1,69 +1,40 @@
 # WorkCount
 
-WorkCount is a small Android app for tracking work shifts, paid hours, and simple earnings.
+Clock out with the hours already counted.
 
-It is built for people who need a lightweight timer and a basic shift journal without accounts, subscriptions, or server sync.
+WorkCount is an Android shift timer and journal for paid time and estimated earnings. Set an hourly rate, record a shift, then check what you worked before payday.
 
-## Features
+![Illustrated WorkCount flow from shift timer to journal to local export](docs/readme/shift-flow.svg)
 
-- Start, pause, resume, and stop work shifts.
-- Track paid time with optional break time.
-- Store work places with default hourly rates.
-- Filter shifts by day, week, month, custom range, place, and status.
-- Export the current journal view to CSV or PDF.
-- Create and restore local JSON backups.
-- Keep a home-screen widget for the active shift.
-- Protect the app with device biometrics or PIN.
-- Get forgotten-timer reminders or auto-stop long-running shifts.
+*Illustrated workflow. The Android app has Home, Journal, and Settings tabs.*
 
-## Tech Stack
+## Try a shift
 
-- Kotlin
-- Android Jetpack Compose
-- Material 3
-- Room
-- DataStore
-- Coroutines
-- Gradle version catalog
+1. Set a default hourly rate on first launch. You can also save workplaces with their own rates.
+2. Tap **Start** on **Home**. Pause for a break, resume when you're back, then tap **Stop**.
+3. Open **Journal** to review or edit the shift. Filter by date, place, or status.
+4. Use the export tools to save a filtered journal as CSV or PDF. Make a JSON backup if you want to restore the data later.
 
-## Project Structure
+The app also has a home-screen widget, timer reminders, optional auto-stop, and a biometric or PIN lock.
 
-```text
-app/           Android app, UI, services, widget, location integration
-core/domain/   Domain models, repositories, payroll periods, calculations
-core/data/     Room, DataStore, CSV/PDF export, backup implementation
-```
+## Install a debug build
 
-## Requirements
-
-- Android Studio with JDK 17
-- Android SDK 36
-- Gradle wrapper included in this repository
-
-## Build
+Use Android Studio, Android SDK 36, and JDK 21 for the Gradle daemon. The Android modules target Java 17. The app runs on Android 8.0 or later.
 
 ```bash
-./gradlew assembleDebug
+git clone https://github.com/Yunykk/workcount.git
+cd workcount
+bash ./gradlew assembleDebug
 ```
 
-On Windows:
+On Windows, run `.\gradlew.bat assembleDebug` from the checkout. You can also open the checkout in Android Studio and run the `app` configuration on a device or emulator.
 
-```powershell
-.\gradlew.bat assembleDebug
-```
+The debug APK is at `app/build/outputs/apk/debug/app-debug.apk`. To install it on a connected device with USB debugging enabled and Android platform tools on your PATH, run `adb install -r app/build/outputs/apk/debug/app-debug.apk`.
 
-## Test
+Run tests with `bash ./gradlew test` or `.\gradlew.bat test` on Windows.
 
-```bash
-./gradlew test
-```
+## Data and limits
 
-## Privacy
+WorkCount stores shifts on the device. There is no account or automatic sync. Optional location access can fill the place on an active shift. Earnings are estimates from recorded hours and rates. Keep a JSON backup before clearing app data or changing phones.
 
-WorkCount stores data locally on the device. The app does not include analytics, ads, accounts, or a remote backend.
-
-Location access is optional and is only used to fill the place field for an active shift.
-
-## License
-
-MIT. See [LICENSE](LICENSE).
+Built with Kotlin, Jetpack Compose, Room, and DataStore. [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
