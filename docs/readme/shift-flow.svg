@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="325" viewBox="0 0 820 325">
+  <title>WorkCount shift calculation</title>
+  <desc>Illustrative timesheet with an 8-hour shift, a 30-minute break, 7.5 paid hours and estimated pay of 112.50 euros at 15 euros an hour.</desc>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0v20" fill="none" stroke="#344233" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="820" height="325" rx="12" fill="#151f17"/>
+  <rect x="1" y="1" width="818" height="323" rx="12" fill="url(#grid)" stroke="#586b54"/>
+  <g transform="translate(30 33)">
+    <rect x="6" y="7" width="337" height="253" fill="#080e09"/>
+    <rect width="337" height="253" rx="4" fill="#c7dc9c"/>
+    <g fill="#192417" font-family="monospace" font-size="23" font-weight="700">
+      <text x="25" y="45">CLOCK IN</text><text x="312" y="45" text-anchor="end">09:00</text>
+      <text x="25" y="92">BREAK</text><text x="312" y="92" text-anchor="end">00:30</text>
+      <text x="25" y="139">CLOCK OUT</text><text x="312" y="139" text-anchor="end">17:00</text>
+      <text x="24" y="204" font-size="28">PAID TIME</text><text x="312" y="204" text-anchor="end" font-size="32">07:30</text>
+    </g>
+    <path d="M24 59h289m-289 47h289m-289 47h289" stroke="#4c5f38" stroke-dasharray="5 3"/>
+    <path d="M24 221h289" stroke="#192417" stroke-width="2"/>
+  </g>
+  <path d="M381 158h47m-14-12 14 12-14 12" stroke="#c7dc9c" stroke-width="3" fill="none"/>
+  <g transform="translate(449 33)">
+    <rect x="6" y="7" width="337" height="253" fill="#080e09"/>
+    <path d="M0 0h337v244l-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-9-9-9 9-4-9z" fill="#f7f3e3"/>
+    <g fill="#192417" font-family="monospace">
+      <text x="24" y="47" font-size="24" font-weight="700">ESTIMATED PAY</text>
+      <text x="24" y="106" font-size="24">7.5 h × €15/h</text>
+      <text x="24" y="192" font-size="62" font-weight="700" letter-spacing="-3">€112.50</text>
+    </g>
+    <path d="M24 126h289m-289 87h289" stroke="#4c5f38" stroke-dasharray="5 3"/>
+  </g>
+</svg>
